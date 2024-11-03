@@ -1,0 +1,123 @@
+/* Estilo para o cabeçalho */
+.header {
+    background-color: #2E3A61; /* Azul escuro */
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.title-header {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para a estrutura geral */
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #f7f7f7;
+    height: calc(100vh - 100px);
+}
+
+/* Estilo para o conteúdo */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+.cancelled-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #000;
+}
+
+.sorvete-info {
+    margin: 50px 0;
+}
+
+.sorvete-name {
+    background-color: #4DC67D; /* Verde para o sorvete */
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0px; /* Retângulo */
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: default;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 100px 0;
+    color: #000;
+    text-align: center;
+}
+
+/* Estilo para o botão */
+.content-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.cancel-button {
+    background-color: #4DC67D; /* Verde para o botão "Pedido Pronto" */
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+    background-color: #3c9032; /* Verde mais escuro no hover */
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    top: 1rem;
+    left: 1rem;
+    font-weight: bold;
+    position: absolute;
+}
+
+.next-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    top: 1rem;
+    right: 1rem;
+    font-weight: bold;
+    position: absolute;
+}
