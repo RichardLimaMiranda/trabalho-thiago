@@ -1,0 +1,96 @@
+/* Estilo para o cabeçalho */
+.header {
+  background-color: #2E3A61;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.title-header {
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.back-button {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+/* Container da página de produto */
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2E3A61;
+  margin-bottom: 1rem;
+}
+
+.product-image {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.product-info {
+  margin-top: 1rem;
+}
+
+.product-description {
+  color: #2E3A61;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.product-price {
+  color: #2E3A61;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Botão de conclusão do pedido */
+.complete-order-button {
+  background-color: #2E3A61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  font-weight: bold;
+}
+
+.complete-order-button:hover {
+  background-color: #1d274b;
+}
