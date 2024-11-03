@@ -3,6 +3,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "ComandaDigitalApplication",
+      "request": "launch",
+      "mainClass": "com.ibeus.Comanda.Digital.ComandaDigitalApplication",
+      "projectName": "Comanda-Digital"
+    },
+    {
       "name": "ng serve",
       "type": "chrome",
       "request": "launch",
