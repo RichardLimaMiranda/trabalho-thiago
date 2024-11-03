@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { observable } from 'rxjs';
+import { Observable } from 'rxjs';
 
 export interface Pedido {
   id: number;
@@ -13,6 +13,18 @@ export interface Pedido {
   providedIn: 'root'
 })
 export class PedidoService {
+  private apiUrl = 'http://localhost:8080/pedidos'; // URL do BackEnd
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  //metodo pra listar pedidos
+  getPedidos(): Observable<Pedido[]> {
+    return this.http.get<Pedido[]>(this.apiUrl);
+  }
+
+  //metodo pra criar pedido
+  createPedido(pedido: Pedido): Observable<Pedido> {
+    return this.http.post<Pedido>(this.apiUrl, pedido);
+  }
+  
 }
