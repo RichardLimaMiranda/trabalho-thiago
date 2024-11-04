@@ -15,16 +15,11 @@ public class Pedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String cliente;
+
     private String status;
+
     private Double precoTotal;
 
-    // Getters e Setters manuais para o campo status
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
 }
