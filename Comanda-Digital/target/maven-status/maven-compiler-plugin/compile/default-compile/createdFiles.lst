@@ -1,0 +1,9 @@
+com\ibeus\Comanda\Digital\controller\DishController.class
+com\ibeus\Comanda\Digital\model\Dish.class
+com\ibeus\Comanda\Digital\repository\DishRepository.class
+com\ibeus\Comanda\Digital\model\Pedido.class
+com\ibeus\Comanda\Digital\ComandaDigitalApplication.class
+com\ibeus\Comanda\Digital\controller\PedidoController.class
+com\ibeus\Comanda\Digital\repository\PedidoRepository.class
+com\ibeus\Comanda\Digital\service\DishService.class
+com\ibeus\Comanda\Digital\service\PedidoService.class
