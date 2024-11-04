@@ -1,12 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { bootstrapApplication } from '@angular/platform-browser'; // Importar bootstrapApplication
+import { AppComponent } from './app.component'; // Importar o componente principal
 
-
-
-@NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
-})
-export class AppModule { }
+// Inicializar a aplicação usando bootstrapApplication
+bootstrapApplication(AppComponent);
