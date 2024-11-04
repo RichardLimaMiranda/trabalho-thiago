@@ -8,8 +8,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Getter
 @Setter
+@Getter
 public class Pedido {
 
     @Id
@@ -21,5 +21,4 @@ public class Pedido {
     private String status;
 
     private Double precoTotal;
-
 }

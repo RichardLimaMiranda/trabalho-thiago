@@ -2,7 +2,9 @@ package com.ibeus.Comanda.Digital.service;
 
 import java.util.List;
 
+import com.ibeus.Comanda.Digital.exception.ComandaException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import com.ibeus.Comanda.Digital.model.Pedido;
@@ -20,14 +22,19 @@ public class PedidoService {
     }
 
     public Pedido atualizarStatus(Long id, String status) {
-        Pedido pedido = pedidoRepository.findById(id).orElseThrow(() -> new RuntimeException("Pedido não encontrado"));
+      Pedido pedido = buscarPedidoPorId(id);
         pedido.setStatus(status);
         return pedidoRepository.save(pedido);
     }
 
     public String obterStatus(Long id) {
-        Pedido pedido = pedidoRepository.findById(id).orElseThrow(() -> new RuntimeException("Pedido não encontrado"));
+        Pedido pedido = buscarPedidoPorId(id);
         return pedido.getStatus();
+    }
+
+    private Pedido buscarPedidoPorId(Long id) {
+      return pedidoRepository.findById(id)
+        .orElseThrow(() -> new ComandaException(String.format("Pedido com o id %s não foi encontrado", id), HttpStatus.NOT_FOUND));
     }
 
     // Método para salvar um novo pedido
