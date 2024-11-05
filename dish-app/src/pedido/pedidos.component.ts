@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { PedidoService, Pedido } from '../pedido.service';
+import { PedidoService, Pedido } from './pedido.service';
+import { CommonModule } from '@angular/common'; // Importe o CommonModule para standalone
 
 @Component({
   selector: 'app-pedidos',
   standalone: true,
-  imports: [],
+  imports: [CommonModule], // Importando o CommonModule para standalone
   templateUrl: './pedidos.component.html',
-  styleUrl: './pedidos.component.css'
+  styleUrls: ['./pedidos.component.css'] // Corrigido para styleUrls
 })
 export class PedidosComponent implements OnInit {
   pedidos: Pedido[] = [];
@@ -18,5 +19,4 @@ export class PedidosComponent implements OnInit {
       this.pedidos = data;
     });
   }
-
 }
