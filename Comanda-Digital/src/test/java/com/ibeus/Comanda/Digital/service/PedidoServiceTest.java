@@ -7,7 +7,6 @@ import static org.mockito.Mockito.when;
 import com.ibeus.Comanda.Digital.mock.PedidoMock;
 import com.ibeus.Comanda.Digital.model.Pedido;
 import com.ibeus.Comanda.Digital.repository.PedidoRepository;
-import jakarta.inject.Inject;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
