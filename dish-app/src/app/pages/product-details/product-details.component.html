@@ -5,13 +5,12 @@
 
 <div class="product-container">
   <div class="product-content">
-    <h3 class="product-title">Sorvete de Chocolate</h3>
-    <img src="assets/images/sorvete-chocolate.jpg" alt="Sorvete de Chocolate" class="product-image">
+    <h3 class="product-title">{{ sorvete.name }}</h3>
+    <img [src]="sorvete.image" alt="{{ sorvete.name }}" class="product-image">
     <div class="product-info">
-      <p class="product-description">Água filtrada, sacarose, leite em pó integral, glucose, cacau em pó, chocolate em pó.</p>
-      <p class="product-price">R$ 10,70</p>
+      <p class="product-description">{{ sorvete.description }}</p>
+      <p class="product-price">R$ {{ sorvete.price | number: '1.2-2' }}</p>
     </div>
   </div>
-
-  <button class="complete-order-button" (click)="goToDeliveryStatus()">Concluir Pedido</button>
+  <button class="complete-order-button" (click)="goToOrderComplete()">Concluir Pedido</button>
 </div>

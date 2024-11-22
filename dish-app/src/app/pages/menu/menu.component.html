@@ -6,7 +6,8 @@
 <div class="menu-container">
   <h3 class="menu-title">Sorvetes</h3>
 
-  <div class="sorvete-item" *ngFor="let sorvete of sorvetes">
+  <!-- Cada item de sorvete será clicável para ir aos detalhes -->
+  <div class="sorvete-item" *ngFor="let sorvete of sorvetes" (click)="goToProductDetails(sorvete)">
     <div class="imagem-container">
       <img [src]="sorvete.image" alt="{{ sorvete.name }}" class="sorvete-image"/>
     </div>
@@ -16,6 +17,4 @@
       <p class="sorvete-price">R$ {{ sorvete.price | number: '1.2-2' }}</p>
     </div>
   </div>
-
-  <button class="order-button" (click)="goToProductDetails()">Faça Seu Pedido</button>
 </div>

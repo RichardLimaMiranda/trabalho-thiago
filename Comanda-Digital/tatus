@@ -1,0 +1,50 @@
+[33mcommit 763c86b0426d256eef81061e1a07832ecb69ce40[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Dayane Farias <dayanefarias236@gmail.com>
+Date:   Tue Nov 19 06:18:28 2024 -0300
+
+    Ajustes feitos no Frontend
+
+.gitignore
+.mvn/wrapper/maven-wrapper.properties
+mvnw
+mvnw.cmd
+pom.xml
+src/main/java/com/ibeus/Comanda/Digital/ComandaDigitalApplication.java
+src/main/java/com/ibeus/Comanda/Digital/config/ErrorHandler.java
+src/main/java/com/ibeus/Comanda/Digital/controller/DishController.java
+src/main/java/com/ibeus/Comanda/Digital/controller/PedidoController.java
+src/main/java/com/ibeus/Comanda/Digital/exception/ComandaException.java
+src/main/java/com/ibeus/Comanda/Digital/model/Dish.java
+src/main/java/com/ibeus/Comanda/Digital/model/Pedido.java
+src/main/java/com/ibeus/Comanda/Digital/repository/DishRepository.java
+src/main/java/com/ibeus/Comanda/Digital/repository/PedidoRepository.java
+src/main/java/com/ibeus/Comanda/Digital/service/DishService.java
+src/main/java/com/ibeus/Comanda/Digital/service/PedidoService.java
+src/main/resources/application.properties
+src/test/java/com/ibeus/Comanda/Digital/ComandaDigitalApplicationTests.java
+src/test/java/com/ibeus/Comanda/Digital/mock/PedidoMock.java
+src/test/java/com/ibeus/Comanda/Digital/service/PedidoServiceTest.java
+target/Comanda-Digital-0.0.1-SNAPSHOT.jar
+target/Comanda-Digital-0.0.1-SNAPSHOT.jar.original
+target/classes/application.properties
+target/classes/com/ibeus/Comanda/Digital/ComandaDigitalApplication.class
+target/classes/com/ibeus/Comanda/Digital/config/ErrorHandler.class
+target/classes/com/ibeus/Comanda/Digital/controller/DishController.class
+target/classes/com/ibeus/Comanda/Digital/controller/PedidoController.class
+target/classes/com/ibeus/Comanda/Digital/exception/ComandaException.class
+target/classes/com/ibeus/Comanda/Digital/model/Dish.class
+target/classes/com/ibeus/Comanda/Digital/model/Pedido.class
+target/classes/com/ibeus/Comanda/Digital/repository/DishRepository.class
+target/classes/com/ibeus/Comanda/Digital/repository/PedidoRepository.class
+target/classes/com/ibeus/Comanda/Digital/service/DishService.class
+target/classes/com/ibeus/Comanda/Digital/service/PedidoService.class
+target/maven-archiver/pom.properties
+target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+target/surefire-reports/TEST-com.ibeus.Comanda.Digital.ComandaDigitalApplicationTests.xml
+target/surefire-reports/com.ibeus.Comanda.Digital.ComandaDigitalApplicationTests.txt
+target/test-classes/com/ibeus/Comanda/Digital/ComandaDigitalApplicationTests.class
+target/test-classes/com/ibeus/Comanda/Digital/mock/PedidoMock.class
+target/test-classes/com/ibeus/Comanda/Digital/service/PedidoServiceTest.class

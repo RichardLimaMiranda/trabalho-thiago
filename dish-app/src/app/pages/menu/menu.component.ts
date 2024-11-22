@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router } from '@angular/router'; // Importação do Router
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -31,13 +31,15 @@ export class MenuComponent {
     }
   ];
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {} // Injeção do Router no construtor
 
-  goToProductDetails() {
-    this.router.navigate(['/product-details']);
+  goToProductDetails(sorvete: any) {
+    // Navegar para a página de detalhes do produto com o sorvete selecionado
+    this.router.navigate(['/product-details'], { state: { sorvete } });
   }
 
   goBack() {
+    // Navegar para a página de boas-vindas
     this.router.navigate(['/welcome']);
   }
 }

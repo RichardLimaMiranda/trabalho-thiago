@@ -1,0 +1,18 @@
+<div class="header">
+    <button class="back-button" (click)="goBack()">&#8592;</button>
+    <h2 class="title-header">La Dolce Crema</h2>
+  </div>
+  
+  <div class="welcome-container">
+    <div class="content">
+      <h3 class="cancelled-title">Pedido Pronto</h3>
+      <div class="sorvete-info">
+        <p class="order-info">O valor total do seu pedido é: R$ {{ total | number: '1.2-2' }}</p>
+      </div>
+      <div class="content-button">
+        <button class="cancel-button" (click)="goToOrderCancelled()">Cancelar Pedido</button>
+        <button class="status-button" (click)="goToDeliveryStatus()">Status da Entrega</button>
+      </div>
+    </div>
+  </div>
+  
